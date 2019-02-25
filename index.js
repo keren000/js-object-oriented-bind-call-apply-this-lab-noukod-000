@@ -1,6 +1,6 @@
 //Your code here
-function justInvoke(fnc){
-  return fnc()
+function justInvoke(fn){
+  return fn();
 }
 
 function setThisWithCall(fnc, x, n){
