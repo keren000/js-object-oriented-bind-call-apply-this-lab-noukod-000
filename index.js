@@ -1,16 +1,59 @@
 //Your code here
-function justInvoke(fn) {
-  return fn()
+
+function justInvoke(fnc){
+
+
+
+  return fnc()
+
+
+
 }
 
-setThisWithCall = function(fn, thisValue, arg) {
-  return fn.call(thisValue, arg);
+
+
+
+
+
+
+function setThisWithCall(fnc, x, n){
+
+
+
+  return fnc.call(x, n)
+
+
+
 }
 
-setThisWithApply = function(fn, thisValue, args) {
-  return fn.apply(thisValue, args);
+
+
+
+
+
+
+function setThisWithApply(fnc, obj, args){
+
+
+
+  return fnc.apply(obj, args)
+
+
+
 }
 
-returnNewFunctionOf = function(functionToBeCopied, thisValue) {
-  return newFn = functionToBeCopied.bind(thisValue);
+
+
+
+
+
+
+function returnNewFunctionOf(fnc, x){
+
+
+
+  return fnc.bind(x)
+
+
+
 }
