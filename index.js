@@ -3,14 +3,14 @@ function justInvoke(fn){
   return fn();
 }
 
-function setThisWithCall(fnc, x, n){
-  return fnc.call(x, n)
+function setThisWithCall(fn, thisValue, arg){
+  return fn.call(thisValue, arg)
 }
 
-function setThisWithApply(fnc, obj, args){
-  return fnc.apply(obj, args)
+function setThisWithApply(fn, thisValue, args){
+  return fn.apply(thisValue, args)
 }
 
-function returnNewFunctionOf(fnc, x){
-  return fnc.bind(x)
+function returnNewFunctionOf(functionToBeCopied, thisValue){
+  return functionToBeCopied.bind(thisValue)
 }
